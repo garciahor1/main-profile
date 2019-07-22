@@ -1,0 +1,12 @@
+.mainBg {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.nav-link{
+    color: white;
+}
+.nav-pills{
+    background-color:rgb(119, 158, 165);
+}
