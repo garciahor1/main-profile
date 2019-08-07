@@ -10,3 +10,18 @@
 .nav-pills{
     background-color:rgb(119, 158, 165);
 }
+
+header {
+    background: url('../images/keyboard.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-bottom: 70px;
+    margin-bottom: 50px;
+}
+#title{
+    background-color: black;
+    color:white;
+    font-size: 30px;
+    font-family: sans-serif;
+}
