@@ -11,56 +11,237 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/slick-theme.css" />
+
+
 </head>
-
-
-<div class="pos-f-t">
-    <div class="collapse" id="navbarToggleExternalContent">
-        <div class="bg-dark p-4">
-            <h4 class="text-white">Welcome!</h4>
-            <nav class="nav nav-pills flex-column flex-sm-row">
-                <a class="flex-sm-fill text-sm-center nav-link active" id="1" href="#">Home</a>
-                <a class="flex-sm-fill text-sm-center nav-link" id="2" href="#">Projects</a>
-                <a class="flex-sm-fill text-sm-center nav-link" id="3" href="#">Resume</a>
-                <a class="flex-sm-fill text-sm-center nav-link" id="4" href="#">Contact</a>
-            </nav>
-        </div>
+<header id="mainHeader">
+    <div class="p-4">
+        <nav class="nav nav-pills flex-column flex-sm-row">
+            <a class="flex-sm-fill text-sm-center nav-link active" id="1" href="#">Home</a>
+            <a class="flex-sm-fill text-sm-center nav-link" id="2" href="#">Projects</a>
+            <a class="flex-sm-fill text-sm-center nav-link" id="3" href="#">Resume</a>
+            <a class="flex-sm-fill text-sm-center nav-link" id="4" href="#">Contact</a>
+        </nav>
     </div>
-    <nav class="navbar navbar-dark bg-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
-            aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    </nav>
-</div>
+</header>
 
 <body>
 
-    <header>
-<div class="container" id="title">
-    <div class="row">
-        <div class="col-3">
-            <p>Hi, I'm</p>
-            <p>Horacio Garcia</p>
-        </div>
-    </div>
-</div>
-    </header>
+    <!--Bod  <header id="inbodyHeader"></header>-->
 
-
-    <!--Body--> <!--Body--> <!--Body--> <!--Body--> <!--Body--> <!--Body--> <!--Body--> <!--Body--> <!--Body--> <!--Body--> <!--Body--> <!--Body--> <!--Body-->
-
-    <div class="container">
+    <div class="container" id="fistContainer">
         <div class="row">
-            <div class="col"></div>
+            <div class="col">
+                <div class="card" id="imgCard" style="width: 18rem;">
+                    <img id="imageOfMe" src="./assets/images/me.jpg" alt="Picture of me ">
+                    <div class="card-body" id="imgOfMeCardBody">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+
+                <div class="jumbotron">
+                    <h1 class="display-4">Hello, world!</h1>
+                    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra
+                        attention to featured content or information.</p>
+                    <hr class="my-4">
+                    <p>It uses utility classes for typography and spacing to space content out within the larger
+                        container.</p>
+                    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                </div>
+            </div>
         </div>
     </div>
 
+    <div class="container" id="secondContainer">
+        <div class="row init">
+            <div class="col carousel">
+                <div>
+                    <div class="card project-display" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Cras justo odio</li>
+                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                    </div>
+                </div>
 
 
+                <div>
+                    <div class="card project-display" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Cras justo odio</li>
+                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div>
+                    <div class="card project-display" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Cras justo odio</li>
+                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div>
+                    <div class="card project-display" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Cras justo odio</li>
+                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div>
+                    <div class="card project-display" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Cras justo odio</li>
+                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div>
+                    <div class="card project-display" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Cras justo odio</li>
+                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div>
+                    <div class="card project-display" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Cras justo odio</li>
+                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div>
+                    <div class="card project-display" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Cras justo odio</li>
+                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
 
 
     <script src="./javascript/main-page.js"></script>
+    <script src="./javascript/slick.js"></script>
+
+
 </body>
+
 
 </html>

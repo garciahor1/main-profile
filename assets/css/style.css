@@ -4,24 +4,107 @@
     -o-background-size: cover;
     background-size: cover;
 }
-.nav-link{
-    color: white;
-}
-.nav-pills{
-    background-color:rgb(119, 158, 165);
+
+#fistContainer {
+    background-color: #3aafa9;
 }
 
-header {
+#secondContainer {
+    margin-bottom: 20px;
+}
+
+.active {
+    color: #fff;
+    background-color: #3aafa9 !important;
+}
+
+#imageOfMe {
+    width: 100%;
+    height: auto;
+    border-radius: 100px 0;
+   
+}
+
+#mainHeader {
+    background-color: #17252a;
+}
+
+.nav-pills {
+    background-color: #2b7a78;
+}
+
+.nav-link {
+    color: #17252a;
+    color: #2b7a78;
+    color: #3aafa9;
+    color: #def2f1;
+    color: #feffff;
+}
+
+#inbodyHeader {
     background: url('../images/keyboard.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    padding-bottom: 70px;
-    margin-bottom: 50px;
+    height: 175px;
 }
-#title{
+
+#imgCard {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 53% 53% 10px 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+#imgOfMeCardBody {
+    background-color: #e9ecef;
+    border-radius: 0 100px;
+}
+
+#displayTitleName {
     background-color: black;
-    color:white;
-    font-size: 30px;
-    font-family: sans-serif;
+    color: black;
+    font-size: 40px;
+    font-family: Didot, serif;
+    font-weight: bold;
+    background-color: white;
+}
+
+.navbar-toggler {
+    background-color: black;
+}
+
+.navbar-toggler-icon {
+    background-color: black;
+}
+
+.init {
+    background-color: #e9ecef;
+}
+
+.jumbotron {
+    margin: 20px 20px;
+    border-radius: 0px 100px !important;
+}
+
+.project-display {
+    margin-top: 20px;
+}
+
+.project-display{
+    border-radius: 50px 0 !important;
+}
+
+@media (max-width: 770px) {
+    .jumbotron {
+        margin: 10px 5px;
+    }
+    #imgCard {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 53% 53% 0 0;
+    }
 }
