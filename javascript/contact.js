@@ -21,6 +21,6 @@ $(document).ready(function () {
         var emailBody = $("#emailFormInput").val();
         var subject = 'from profile page'
         window.location = 'mailto:horacio.jobs@gmail.com?subject=' + subject + '&body=' + emailBody;
-        $("#emailFormInput").empty();
+        $("#emailFormInput").val("");
     })
 })
