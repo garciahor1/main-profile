@@ -12,55 +12,33 @@ $(document).ready(function () {
 
   });
 
-  $(".flex-sm-fill").on("click", function () {
-    let value = $(this).attr("id");
-    console.log(value);
-    if (value == "1") {
-      $("#1").addClass("active");
-      $("#2").removeClass("active");
-      $("#3").removeClass("active");
-      $("#4").removeClass("active");
-    } else if (value == "2") {
-      $("#1").removeClass("active");
-      $("#2").addClass("active");
-      $("#3").removeClass("active");
-      $("#4").removeClass("active");
-    } else if (value == "3") {
-      $("#1").removeClass("active");
-      $("#2").removeClass("active");
-      $("#3").addClass("active");
-      $("#4").removeClass("active");
-    } else if (value == "4") {
-      $("#1").removeClass("active");
-      $("#2").removeClass("active");
-      $("#3").removeClass("active");
-      $("#4").addClass("active");
-    }
-
-  });
-
+  $("#1").addClass("active");
+  $("#2").removeClass("active");
+  $("#3").removeClass("active");
+  $("#4").removeClass("active");
 
   $('.carousel').slick({
     centerMode: true,
-    centerPadding: '60px',
+    centerPadding: '10px',
     slidesToShow: 3,
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 996,
         settings: {
           arrows: false,
           centerMode: true,
-          centerPadding: '40px',
+          centerPadding: '10px',
           slidesToShow: 2
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 770,
         settings: {
           arrows: false,
           centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 1
+          centerPadding: '10px',
+          slidesToShow: 1,
+         
         }
       }
     ]

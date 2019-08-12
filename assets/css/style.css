@@ -1,9 +1,4 @@
-.mainBg {
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
+
 
 #fistContainer {
     background-color: #3aafa9;
@@ -22,7 +17,6 @@
     width: 100%;
     height: auto;
     border-radius: 100px 0;
-   
 }
 
 #mainHeader {
@@ -60,14 +54,16 @@
 
 #imgOfMeCardBody {
     background-color: #e9ecef;
-    border-radius: 0 100px;
+    border-radius: 100px 0;
 }
-
+#myName{
+    text-align: center !important;
+}
 #displayTitleName {
     background-color: black;
     color: black;
     font-size: 40px;
-    font-family: Didot, serif;
+   
     font-weight: bold;
     background-color: white;
 }
@@ -79,6 +75,8 @@
 .navbar-toggler-icon {
     background-color: black;
 }
+
+
 
 .init {
     background-color: #e9ecef;
@@ -93,11 +91,88 @@
     margin-top: 20px;
 }
 
-.project-display{
+.project-display {
+    border-radius: 50px 0 !important;
+    background-color: #e9ecef !important;
+}
+
+.img-project-display {
     border-radius: 50px 0 !important;
 }
 
+body {
+    background-color: lightslategrey !important;
+}
+
+.slick-slider {
+    background-color: #3aafa9;
+}
+
+
+.Get-Page{
+    margin-left: 50px;
+}
+
+.navbar-black{
+    background-color: black;
+}
+
+#resumeOuterBody{
+    background-color:#3aafa9 !important; 
+}
+
+#resumeInnerBody{
+    background-color:white !important;
+}
+
+.btn-primary{
+    background-color: #3aafa9 !important;
+}
+#projectDisplayContainer{
+    background-color:#2b7a78;
+}
+.project-display-projecthtml
+{
+    margin: 30px 0 0 40px;
+}
+
+#mobileHeader{
+   display: none;
+}
+#smallbreake{
+    height: 10px;
+    background-color: #3aafa9;
+    
+}
+
+#footer-card {
+   margin-top: -30px;
+   height: 50px;
+   background-color: #2b7a78;
+}
+.card-footer {
+    height: 20px;
+    background-color: #2b7a78;
+}
+
 @media (max-width: 770px) {
+    
+    .display-Container-col{
+        text-align: center !important;
+    }
+    .project-display-projecthtml
+{
+    margin: 10px;
+    width: 18rem !important;
+    display: inline-block !important;
+  
+}
+    .nonMobileHeader{
+   display: none;
+    }
+    #mobileHeader{
+    display: block;
+    }
     .jumbotron {
         margin: 10px 5px;
     }

@@ -8,25 +8,55 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+   
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
     <link rel="stylesheet" type="text/css" href="./assets/css/slick.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/slick-theme.css" />
 
+    
+
+
+
 
 </head>
-<header id="mainHeader">
+
+<header id="mainHeader" class="nonMobileHeader" >
     <div class="p-4">
         <nav class="nav nav-pills flex-column flex-sm-row">
-            <a class="flex-sm-fill text-sm-center nav-link active" id="1" href="#">Home</a>
-            <a class="flex-sm-fill text-sm-center nav-link" id="2" href="#">Projects</a>
-            <a class="flex-sm-fill text-sm-center nav-link" id="3" href="#">Resume</a>
-            <a class="flex-sm-fill text-sm-center nav-link" id="4" href="#">Contact</a>
+            <a class="flex-sm-fill text-sm-center nav-link active" id="1" href="./index.html">Home</a>
+            <a class="flex-sm-fill text-sm-center nav-link" id="2" href="./projects.html">Projects</a>
+            <a class="flex-sm-fill text-sm-center nav-link" id="3" href="./Horacio_Resume.html">Resume</a>
+            <a class="flex-sm-fill text-sm-center nav-link" id="4" href="./contact.html">Contact</a>
+            
         </nav>
     </div>
 </header>
+
+<header id="mobileHeader">
+    <div class="pos-f-t">
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4">
+                <nav class="nav nav-pills flex-column flex-sm-row">
+                    <a class="flex-sm-fill text-sm-center nav-link active" id="1" href="./index.html">Home</a>
+                    <a class="flex-sm-fill text-sm-center nav-link" id="2" href="./projects.html">Projects</a>
+                    <a class="flex-sm-fill text-sm-center nav-link" id="3" href="./Horacio_Resume.html">Resume</a>
+                    <a class="flex-sm-fill text-sm-center nav-link" id="4" href="./contact.html">Contact</a>
+                </nav>
+            </div>
+        </div>
+        <nav class="navbar navbar-dark navbar-black">
+            <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+                aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span> 
+            </button>
+        </nav>
+    </div>
+
+</header>
+
 
 <body>
 
@@ -38,23 +68,20 @@
                 <div class="card" id="imgCard" style="width: 18rem;">
                     <img id="imageOfMe" src="./assets/images/me.jpg" alt="Picture of me ">
                     <div class="card-body" id="imgOfMeCardBody">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title" id="myName">Horacio Garcia</h5>
+                        <p class="card-text">Highly organized, self-motivated individual with good listening skills, and
+                            a great team player.</p>
                     </div>
                 </div>
             </div>
             <div class="col">
-
                 <div class="jumbotron">
-                    <h1 class="display-4">Hello, world!</h1>
-                    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra
-                        attention to featured content or information.</p>
+                    <h1 class="display-4">Welcome!</h1>
+                    <p class="lead"> “LEARNING IS NOT ATTAINED BY CHANCE, IT MUST BE SOUGHT FOR WITH ARDOR AND ATTENDED
+                        TO WITH DILIGENCE.” ―ABIGAIL ADAMS </p>
                     <hr class="my-4">
-                    <p>It uses utility classes for typography and spacing to space content out within the larger
-                        container.</p>
-                    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                    <p> Below you can find all my project including links and code for each project. Thank you for
+                        taking a look. </p>
                 </div>
             </div>
         </div>
@@ -65,20 +92,68 @@
             <div class="col carousel">
                 <div>
                     <div class="card project-display" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
+                        <img src="./assets/images/basicPortfolio.png" class="card-img-top img-project-display"
+                            alt="Basic Portfolio">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
+                            <h5 class="card-title">Basic Portfolio</h5>
                         </div>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Cras justo odio</li>
-                            <li class="list-group-item">Dapibus ac facilisis in</li>
-                            <li class="list-group-item">Vestibulum at eros</li>
+                            <li class="list-group-item">Date created: July-11-2019 </li>
+                            <li class="list-group-item">Technologies: HTML, CSS.</li>
+                            <li class="list-group-item">Get the code for this project or view the project page below.
+                            </li>
+
                         </ul>
                         <div class="card-body">
-                            <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
+                            <a href="https://github.com/garciahor1/Basic-Portfolio"> <button type="button"
+                                    class="btn btn-primary btn-sm">Get Code</button></a>
+                            <a href="https://garciahor1.github.io/Basic-Portfolio/" class="Get-Page"><button
+                                    type="button" class="btn btn-primary btn-sm">View Project</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="card project-display" style="width: 18rem;">
+                        <img src="./assets/images/responsivePortfolio.png" class="card-img-top img-project-display"
+                            alt="Responsive Portfolio">
+                        <div class="card-body">
+                            <h5 class="card-title">Responsive Portfolio</h5>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Date created: July-16-2019</li>
+                            <li class="list-group-item">Technologies: HTML, CSS.</li>
+                            <li class="list-group-item">Get the code for this project or view the project page below.
+                            </li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="https://github.com/garciahor1/Responsive-Portfolio"> <button type="button"
+                                    class="btn btn-primary btn-sm">Get Code</button></a>
+                            <a href="https://garciahor1.github.io/Responsive-Portfolio/" class="Get-Page"><button
+                                    type="button" class="btn btn-primary btn-sm">View Project</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="card project-display" style="width: 18rem;">
+                        <img src="./assets/images/bootstrapPortfolio.png" class="card-img-top img-project-display"
+                            alt="Bootstrap Portfolio">
+                        <div class="card-body">
+                            <h5 class="card-title">Bootstrap Portfolio</h5>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Date created: July-16-2019 </li>
+                            <li class="list-group-item">Technologies: HTML, CSS, Bootstrap.</li>
+                            <li class="list-group-item">Get the code for this project or view the project page below.
+                            </li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="https://github.com/garciahor1/Bootstrap-Portfolio"> <button type="button"
+                                    class="btn btn-primary btn-sm">Get Code</button></a>
+                            <a href="https://garciahor1.github.io/Bootstrap-Portfolio/index.htm"
+                                class="Get-Page"><button type="button" class="btn btn-primary btn-sm">View
+                                    Project</button></a>
                         </div>
                     </div>
                 </div>
@@ -86,162 +161,111 @@
 
                 <div>
                     <div class="card project-display" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
+                        <img src="./assets/images/Unit-4-Game.png" class="card-img-top img-project-display"
+                            alt="Unit 4 Game">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
+                            <h5 class="card-title">Diamond Collector Game</h5>
                         </div>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Cras justo odio</li>
-                            <li class="list-group-item">Dapibus ac facilisis in</li>
-                            <li class="list-group-item">Vestibulum at eros</li>
+                            <li class="list-group-item">Date created: July-22-2019 </li>
+                            <li class="list-group-item">Technologies: HTMl, CSS, Javascript.</li>
+                            <li class="list-group-item">Get the code for this project or view the project page below.
+                            </li>
                         </ul>
                         <div class="card-body">
-                            <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
+                            <a href="https://github.com/garciahor1/unit-4-game"> <button type="button"
+                                    class="btn btn-primary btn-sm">Get Code</button></a>
+                            <a href="https://garciahor1.github.io/unit-4-game/" class="Get-Page"><button type="button"
+                                    class="btn btn-primary btn-sm">View Project</button></a>
+
                         </div>
                     </div>
                 </div>
-
 
                 <div>
                     <div class="card project-display" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
+                        <img src="./assets/images/triviaGame.png" class="card-img-top img-project-display"
+                            alt="Trivia Game">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
+                            <h5 class="card-title">Trivia Game</h5>
                         </div>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Cras justo odio</li>
-                            <li class="list-group-item">Dapibus ac facilisis in</li>
-                            <li class="list-group-item">Vestibulum at eros</li>
+                            <li class="list-group-item">Date created: July-29-2019</li>
+                            <li class="list-group-item">Technologies: HTMl, CSS, Bootstrap, Javascript, Jquery, Trivia
+                                API.</li>
+                            <li class="list-group-item">Get the code for this project or view the project page below.
+                            </li>
                         </ul>
                         <div class="card-body">
-                            <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
+                            <a href="https://github.com/garciahor1/TriviaGame"> <button type="button"
+                                    class="btn btn-primary btn-sm">Get-Code</button></a>
+                            <a href="https://garciahor1.github.io/TriviaGame/" class="Get-Page"><button type="button"
+                                    class="btn btn-primary btn-sm">View Project</button></a>
+
                         </div>
                     </div>
                 </div>
-
 
                 <div>
                     <div class="card project-display" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
+                        <img src="./assets/images/travelGuide.png" class="card-img-top img-project-display"
+                            alt="Project 1 travel guide">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
+                            <h5 class="card-title">Travel-Guide</h5>
                         </div>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Cras justo odio</li>
-                            <li class="list-group-item">Dapibus ac facilisis in</li>
-                            <li class="list-group-item">Vestibulum at eros</li>
+                            <li class="list-group-item">Date created: August-7-2019 </li>
+                            <li class="list-group-item">Technologies: HTMl, CSS, Javascript, Jquery, Watson translation
+                                API,
+                                Open Weather API, Zomato API, Font Awesome library. </li>
+                            <li class="list-group-item">Get the code for this project or view the project page below.
+                            </li>
                         </ul>
                         <div class="card-body">
-                            <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
+                            <a href="https://github.com/zigybass/Travel-Guide"> <button type="button"
+                                    class="btn btn-primary btn-sm">Get Code</button></a>
+                            <a href="https://zigybass.github.io/Travel-Guide/" class="Get-Page"><button type="button"
+                                    class="btn btn-primary btn-sm">View Project</button></a>
+
                         </div>
                     </div>
                 </div>
-
 
                 <div>
                     <div class="card project-display" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
+                        <img src="./assets/images/thisProject.png" class="card-img-top img-project-display"
+                            alt="This Project">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
+                            <h5 class="card-title">This Project</h5>
                         </div>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Cras justo odio</li>
-                            <li class="list-group-item">Dapibus ac facilisis in</li>
-                            <li class="list-group-item">Vestibulum at eros</li>
+                            <li class="list-group-item">Date created: August-11-2019</li>
+                            <li class="list-group-item">Technologies: HTMl, CSS, Javascript, Jquery, slick carousel
+                                library. </li>
+                            <li class="list-group-item">Get the code for this project or view the project page below.
+                            </li>
                         </ul>
                         <div class="card-body">
-                            <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
+                            <a href=""> <button type="button" class="btn btn-primary btn-sm">Get Code</button></a>
+                            <a href="" class="Get-Page"><button type="button" class="btn btn-primary btn-sm">View
+                                    Project</button></a>
                         </div>
                     </div>
                 </div>
-
-
-                <div>
-                    <div class="card project-display" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Cras justo odio</li>
-                            <li class="list-group-item">Dapibus ac facilisis in</li>
-                            <li class="list-group-item">Vestibulum at eros</li>
-                        </ul>
-                        <div class="card-body">
-                            <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div>
-                    <div class="card project-display" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Cras justo odio</li>
-                            <li class="list-group-item">Dapibus ac facilisis in</li>
-                            <li class="list-group-item">Vestibulum at eros</li>
-                        </ul>
-                        <div class="card-body">
-                            <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div>
-                    <div class="card project-display" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Cras justo odio</li>
-                            <li class="list-group-item">Dapibus ac facilisis in</li>
-                            <li class="list-group-item">Vestibulum at eros</li>
-                        </ul>
-                        <div class="card-body">
-                            <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
-                        </div>
-                    </div>
-                </div>
-
-
             </div>
         </div>
 
     </div>
-
-
+    <footer>
+        <div class="card" id="footer-card">
+            <div id="smallbreake"></div>
+        </div>
+       
+    </footer>
     <script src="./javascript/main-page.js"></script>
     <script src="./javascript/slick.js"></script>
-
+    
 
 </body>
-
 
 </html>

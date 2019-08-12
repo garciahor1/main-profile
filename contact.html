@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+</head>
+<header id="mainHeader" class="nonMobileHeader" >
+    <div class="p-4">
+        <nav class="nav nav-pills flex-column flex-sm-row">
+            <a class="flex-sm-fill text-sm-center nav-link" id="1" href="./index.html">Home</a>
+            <a class="flex-sm-fill text-sm-center nav-link" id="2" href="./projects.html">Projects</a>
+            <a class="flex-sm-fill text-sm-center nav-link" id="3" href="./Horacio_Resume.html">Resume</a>
+            <a class="flex-sm-fill text-sm-center nav-link" id="4" href="./contact.html">Contact</a>
+            
+        </nav>
+    </div>
+</header>
+
+<header id="mobileHeader">
+    <div class="pos-f-t">
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4">
+                <nav class="nav nav-pills flex-column flex-sm-row">
+                    <a class="flex-sm-fill text-sm-center nav-link" id="1" href="./index.html">Home</a>
+                    <a class="flex-sm-fill text-sm-center nav-link" id="2" href="./projects.html">Projects</a>
+                    <a class="flex-sm-fill text-sm-center nav-link" id="3" href="./Horacio_Resume.html">Resume</a>
+                    <a class="flex-sm-fill text-sm-center nav-link active" id="4" href="./contact.html">Contact</a>
+                </nav>
+            </div>
+        </div>
+        <nav class="navbar navbar-dark navbar-black">
+            <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+                aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span> 
+            </button>
+        </nav>
+    </div>
+
+</header>
+
+<body>
+
+    <!--Bod  <header id="inbodyHeader"></header>-->
+
+    <div class="container" id="fistContainer">
+        <div class="row">
+            <div class="col">
+                <div class="card" id="imgCard" style="width: 18rem;">
+                    <img id="imageOfMe" src="./assets/images/me.jpg" alt="Picture of me ">
+                    <div class="card-body" id="imgOfMeCardBody">
+                        <h5 class="card-title" id="myName">Horacio Garcia</h5>
+                        <p class="card-text">I want to hear from you.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="jumbotron">
+                    <h1 class="display-4">Send me an email.</h1>
+                    <div class="form-group">
+                        <textarea class="form-control"  id="emailFormInput" rows="3"></textarea>
+                        <button id="emailButton" type="button" class="btn btn-primary">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="./javascript/contact.js"></script>
+</body>
+
+
