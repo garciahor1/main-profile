@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,20 +11,21 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
+
 <body id="resumeOuterBody">
-    
-    <header id="mainHeader" class="nonMobileHeader" >
+
+    <header id="mainHeader" class="nonMobileHeader">
         <div class="p-4">
             <nav class="nav nav-pills flex-column flex-sm-row">
                 <a class="flex-sm-fill text-sm-center nav-link" id="1" href="./index.html">Home</a>
                 <a class="flex-sm-fill text-sm-center nav-link" id="2" href="./projects.html">Projects</a>
                 <a class="flex-sm-fill text-sm-center nav-link" id="3" href="./Horacio_Resume.html">Resume</a>
                 <a class="flex-sm-fill text-sm-center nav-link" id="4" href="./contact.html">Contact</a>
-                
+
             </nav>
         </div>
     </header>
-    
+
     <header id="mobileHeader">
         <div class="pos-f-t">
             <div class="collapse" id="navbarToggleExternalContent">
@@ -31,32 +33,26 @@
                     <nav class="nav nav-pills flex-column flex-sm-row">
                         <a class="flex-sm-fill text-sm-center nav-link" id="1" href="./index.html">Home</a>
                         <a class="flex-sm-fill text-sm-center nav-link" id="2" href="./projects.html">Projects</a>
-                        <a class="flex-sm-fill text-sm-center nav-link active" id="3" href="./Horacio_Resume.html">Resume</a>
+                        <a class="flex-sm-fill text-sm-center nav-link active" id="3"
+                            href="./Horacio_Resume.html">Resume</a>
                         <a class="flex-sm-fill text-sm-center nav-link" id="4" href="./contact.html">Contact</a>
                     </nav>
                 </div>
             </div>
             <nav class="navbar navbar-dark navbar-black">
-                <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                    aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span> 
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
             </nav>
         </div>
-    
+
     </header>
-
-        <div class="container" id="resumeInnerBody">
-                <div class="row">
-                    <div class="col" style="height: 100%">
-                        <iframe id="pdfResume" src="./assets/Documents/Horacio_Garcia__Resume_2019pdf.pdf" width="100%" height="800px"></iframe>
-                    </div>
-                </div>
-            </div>
-            <script src="./javascript/resume.js"></script>
+    <div class="col iframeContainer">
+        <iframe id="pdfResume" src="./assets/Documents/Horacio_Garcia__Resume_GT.pdf"></iframe>
+    </div>
+    <script src="./javascript/resume.js"></script>
 </body>
+
 </html>
-
-
-
-
